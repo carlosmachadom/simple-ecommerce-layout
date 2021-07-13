@@ -8,4 +8,4 @@ Ecommerce layout made with html and css.
 - COMMAND LINE
 
 ## Links
-- 
+- https://carlosmachadom.github.io/simple-ecommerce-layout/

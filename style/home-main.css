@@ -32,7 +32,6 @@
 .home-main .cards-section
 {
     width: 100%;
-    height: fit-content;
     padding: 7rem var(--high-padding) 5rem var(--high-padding);
     background-color: var(--gray-orange);    
 
@@ -118,32 +117,6 @@
     background-color: var(--main-orange);
 }
 
-.cards-section .arrow-down
-{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 15%;
-    left: calc(50% - 25px);
-
-    visibility: hidden;
-}
-
-.cards-section .arrow-down span
-{  
-    background-image: url('/assets/icons/svg/arrow-down.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    display: inline-block;
-    width: 100%;
-    height: inherit;
-}
-
-
-
     /* Aquí empieza la sección de beneficios */
 .home-main .benefits-section
 {
@@ -221,7 +194,6 @@
 .mentions-section .mentions-container
 {
     width: 100%;
-    /* max-width: 1300px; */
     height: fit-content;
     margin: 0 auto;
 
@@ -325,19 +297,6 @@
     {
         transform: translateY(-40%);
         transition: transform 0.5s linear;
-    }
-
-    .cards-section .arrow-down
-    {
-        visibility: visible !important;
-
-        animation: ease-out down-arrow-animation 1s infinite;
-    }
-
-    @keyframes down-arrow-animation
-    {
-        0% { transform:scale(1.4); }
-        100% { transform:scale(1); }
     }
 }
 

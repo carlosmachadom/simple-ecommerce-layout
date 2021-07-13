@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/style/formulario-main.css" />
+        <link rel="stylesheet" href="/style/general-grid.css" />
+        <link rel="stylesheet" href="./style/general-layout.css" />
+        <title>form</title>
+    </head>
+    <body>
+        <!-- Aquí empieza el header -->
+        <header class="header">
+            <nav class="navbar-container">
+                <figure class="navbar-container__logo-container">
+                    <a href="/" class="logo-link"><img src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c9/images/logo.png" alt="logo de la empresa" /></a>
+                </figure>
+
+                <section class="navbar-container__menu-container">
+                    <a href="#" class="icon-container"><span></span></a>
+                    <input type="checkbox">
+                                        
+                    <ul class="links-container">
+                        <li><a href="#">Faqs</a></li>
+                        <li><a href="/product.html" target="_blank">Product and description</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <!-- Aquí acaba el header -->
+
+
+        <!-- Aquí empieza el main -->
+        <main class="form-main">
+            <section class="form-section">
+                <article class="form-section__card">
+                    <figure class="form-section__card--image-container">
+                        <img src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c11/images/box2.png" alt="">
+                    </figure>
+                    <div class="form-section__card--description-container">
+                        <h2>Product #1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis, at possimus consequatur voluptates non.</p>
+                    </div>
+                </article>
+
+                <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XG9BGJK7XZKPY" class="form-section__form" method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="user-name" id="name" placeholder="Insert your name" required autocomplete="name" value="name"/><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="user-email" id="email" placeholder="Insert your Email" required autocomplete="email" value="email"/><br>
+
+                    <label for="phone-number">Phone number</label> <br>
+                    <input type="text" name="user-name" id="phone-number" placeholder="Inser your phone number" required autocomplete="mobile" value="mobile"/><br>
+
+                    <input type="submit" name="submit" value="Confirm payment" />
+                </form>
+            </section>
+        </main>            
+        <!-- Aquí termina el main -->
+
+        <!-- Aquí empieza el footer -->
+        <footer class="footer">
+            <ul class="links-container">
+                <li class="links-container__link"><a href="#">Terms and conditions</a></li>
+                <li class="links-container__link"><a href="mailto:carlos.machadomejia@gmail.com">carlos.machadomejia@gmail.com</a></li>
+            </ul>
+        </footer>
+        <!-- Aquí acaba el footer -->
+
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>

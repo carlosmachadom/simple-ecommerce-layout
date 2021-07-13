@@ -1,0 +1,131 @@
+:root
+{
+    /* Width grid */
+    --column-size: 8.333333333333333%;
+}
+
+.grid-main
+{
+    width: 100%;
+    height: inherit;
+}
+
+/* Here starts the grid system */
+.grid-main .grid-section
+{
+    width: 100%;
+    height: fit-content;
+}
+
+.grid-section .grid-container
+{
+    width: 100%;
+    max-width: 980px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+
+    color: var(--black-orange);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.grid-container .column
+{
+    padding: 1%;
+    border-right: none;
+    height: inherit;
+    
+    border: solid 2px var(--black-orange);
+    border-bottom: none;
+}
+
+.grid-section .grid-container:nth-last-child(1)
+{
+    border-bottom: solid 2px var(--black-orange);        
+}
+
+.grid-container .column.column1
+{
+    width: calc(var(--column-size) * 1);    
+}
+
+.grid-container .column.column2
+{
+    width: calc(var(--column-size) * 2);
+}
+
+.grid-container .column.column3
+{
+    width: calc(var(--column-size) * 3);
+}
+
+.grid-container .column.column4
+{
+    width: calc(var(--column-size) * 4);
+}
+
+.grid-container .column.column5
+{
+    width: calc(var(--column-size) * 5);
+}
+
+.grid-container .column.column6
+{
+    width: calc(var(--column-size) * 6);
+}
+
+.grid-container .column.column7
+{
+    width: calc(var(--column-size) * 7);
+}
+
+.grid-container .column.column8
+{
+    width: calc(var(--column-size) * 8);
+}
+
+.grid-container .column.column9
+{
+    width: calc(var(--column-size) * 9);
+}
+
+.grid-container .column.column10
+{
+    width: calc(var(--column-size) * 10);
+}
+
+.grid-container .column.column11
+{
+    width: calc(var(--column-size) * 11);
+}
+
+.grid-container .column.column12
+{
+    width: calc(var(--column-size) * 12);
+}
+/* Here finishes the grid system section */
+
+/* Aquí empiezan los media queries */
+@media (min-width: 600px)
+{
+    .grid-section .grid-container
+    {
+        flex-direction: row;
+    }
+
+    .grid-container .column
+    {
+        border-right: none;
+        border-bottom: solid 2px var(--black-orange);
+    }
+
+    .grid-section .grid-container:nth-last-child(1)
+    {
+        border-right: solid 2px var(--black-orange);        
+    }
+}
+

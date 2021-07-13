@@ -1,0 +1,88 @@
+.success-body,
+.nosuccess-body
+{
+    background-color: var(--black-orange);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main";
+}
+
+.success-main,
+.nosuccess-main
+{
+    grid-area: main;    
+}
+
+
+.success-main .success-section,
+.nosuccess-main .nosuccess-section
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.success-section .image-container,
+.nosuccess-section .image-container
+{
+    width: 100%;
+    max-width: 250px;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+.success-section .image-container img,
+.nosuccess-section .image-container img
+{
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.success-section .text-container,
+.nosuccess-section .text-container
+{
+    width: 100%;
+    max-width: 900px;
+    height: fit-content;
+    text-align: center;
+}
+
+.success-section .text-container h2,
+.nosuccess-section .text-container h2
+{
+    color: var(--white-orange);
+    font-size: var(--big-font-size);
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+
+
+.success-section .text-container p,
+.nosuccess-section .text-container p
+{
+    color: var(--white-orange);
+    font-size: var(--mid-font-size);
+    line-height: 18px;
+}
+
+
+.success-section .text-container p > a,
+.nosuccess-section .text-container p > a
+{
+    color: var(--medium-orange);
+    font-size: var(--mid-font-size);
+    line-height: 25px;
+}
+
+.success-section .text-container p > a:hover,
+.nosuccess-section .text-container p > a:hover
+{
+    text-decoration: underline;
+}
